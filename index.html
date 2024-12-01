@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Suitmedia Test</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img src="assets/img/logo.png" alt="" class="nav__img" />
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li>
+              <a href="#ideas" class="nav__link active">Ideas</a>
+            </li>
+            <li>
+              <a href="#Careers" class="nav__link">Careers</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Work -->
+      <section class="work section" id="work"></section>
+
+      <!-- About -->
+      <section class="about section" id="about"></section>
+
+      <!-- Services -->
+      <section class="services section" id="services"></section>
+
+      <!-- Ideas -->
+      <section class="ideas section" id="ideas">
+        <div class="banner">
+          <div class="banner__text" id="banner-text">
+            <h1>Ideas</h1>
+            <p>Where all our great things begin</p>
+          </div>
+          <div class="white__banner"></div>
+        </div>
+
+        <div class="filters">
+          <label for="sort">Sort by</label>
+          <select id="sort">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+
+          <label for="itemsPerPage">Items per page:</label>
+          <select id="itemsPerPage">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+
+        <!-- posts -->
+        <main class="post-list">
+          <div id="posts" class="cards-container">
+            <!-- card will be inserted here by JS -->
+          </div>
+
+          <div class="ideas__pagination">
+            <button id="prevPage" class="pagination-button">Previous</button>
+            <div id="pageNumbers" class="page-numbers"></div>
+            <!-- New pagination -->
+            <button id="nextPage" class="pagination-button">Next</button>
+          </div>
+        </main>
+      </section>
+
+      <!-- Careers -->
+      <section class="carees section" id="careers"></section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
